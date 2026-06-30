@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project aims to develop a machine learning solution for predicting customer churn and estimating Customer Lifetime Value (LTV). The objective is to identify customers at risk of leaving, understand the factors influencing churn, and estimate the long-term value of customers to support business retention strategies and revenue optimization.
+Customer retention is one of the biggest challenges faced by subscription-based businesses. This project focuses on building an end-to-end machine learning solution that predicts customer churn and estimates Customer Lifetime Value (LTV). By combining predictive analytics with customer segmentation, the project helps identify customers who are likely to leave, understand the factors influencing churn, and estimate each customer's long-term value. These insights can support businesses in designing targeted retention strategies, improving customer satisfaction, and maximizing revenue.
 
 ---
 
@@ -10,50 +10,42 @@ This project aims to develop a machine learning solution for predicting customer
 
 ## Overview
 
-The first phase of the project focused on understanding, cleaning, and exploring the customer dataset. The objective was to prepare high-quality data for machine learning modeling and uncover initial business insights through exploratory analysis.
+The first week focused on understanding the dataset and preparing it for analysis. Before building any machine learning models, it was important to ensure that the data was clean, reliable, and well-structured. This phase also involved exploring customer behavior through visualizations and identifying meaningful business patterns.
 
-## Tasks Completed
+## Work Completed
 
-### Data Loading and Inspection
+### Data Exploration
 
 * Loaded the customer churn dataset.
-* Examined dataset structure, features, and data types.
-* Reviewed summary statistics and dataset dimensions.
+* Examined the dataset structure, feature names, and data types.
+* Reviewed summary statistics to understand the distribution of variables.
 
 ### Data Cleaning
 
-* Identified and handled missing values.
+* Checked for missing values and handled them appropriately.
 * Removed duplicate records.
-* Corrected data inconsistencies where required.
-
-### Missing Value Analysis
-
-* Evaluated the presence of missing data.
-* Applied appropriate techniques to ensure data completeness.
-
-### Outlier Detection
-
-* Identified unusual observations using statistical methods and visualizations.
-* Analyzed the impact of outliers on data quality.
+* Corrected inconsistencies in the dataset where necessary.
 
 ### Exploratory Data Analysis (EDA)
 
-* Examined customer demographics and service-related features.
-* Analyzed churn distribution across different customer groups.
-* Explored relationships among key variables using visualizations.
+* Analyzed customer demographics and service-related information.
+* Studied churn distribution across different customer groups.
+* Explored relationships between important variables using charts and visualizations.
+* Identified trends that may contribute to customer churn.
 
-### Initial Business Insights
+### Outlier Analysis
 
-* Identified patterns associated with customer churn.
-* Highlighted important customer characteristics affecting retention.
-* Generated preliminary recommendations based on observed trends.
+* Detected outliers using statistical methods and visual inspection.
+* Evaluated whether outliers required treatment before modeling.
 
-## Key Outcomes
+### Business Insights
 
-* Successfully prepared the dataset for machine learning.
-* Improved data quality through cleaning and preprocessing.
-* Identified important customer behavior patterns.
-* Generated meaningful business insights through EDA.
+Some early observations from the data included:
+
+* Customers with shorter tenure showed a higher tendency to churn.
+* Higher monthly charges were often associated with increased churn.
+* Contract type and payment method appeared to influence customer retention.
+* Long-term customers generally contributed higher business value.
 
 ## Skills Applied
 
@@ -62,11 +54,11 @@ The first phase of the project focused on understanding, cleaning, and exploring
 * Exploratory Data Analysis (EDA)
 * Data Visualization
 * Statistical Analysis
-* Business Insight Generation
+* Business Understanding
 
-## Week 1 Conclusion
+## Outcome
 
-Week 1 established a strong foundation for the project by transforming raw customer data into a clean and structured dataset. Through exploratory analysis, important patterns and trends were identified, providing valuable insights for the predictive modeling phase.
+By the end of Week 1, the raw dataset had been transformed into a clean and structured dataset ready for machine learning. The exploratory analysis also provided valuable insights that guided the next stages of the project.
 
 **Status: Week 1 Successfully Completed ✅**
 
@@ -76,46 +68,46 @@ Week 1 established a strong foundation for the project by transforming raw custo
 
 ## Overview
 
-During Week 2, the project progressed from exploratory analysis to predictive modeling and customer value assessment. The primary focus was on preparing the dataset for machine learning, developing churn prediction models, and estimating Customer Lifetime Value (LTV) to support data-driven business decisions.
+The second week focused on preparing the cleaned dataset for machine learning and developing predictive models. In addition to churn prediction, Customer Lifetime Value (LTV) was calculated to better understand customer profitability and support business decision-making.
 
-## Tasks Completed
+## Work Completed
 
 ### Data Preprocessing
 
-* Verified and handled missing values.
-* Removed duplicate records.
-* Encoded categorical variables into numerical format.
-* Standardized numerical features using feature scaling techniques.
+* Encoded categorical features into numerical values.
+* Applied feature scaling to numerical variables.
+* Verified data quality before model training.
 
 ### Feature Engineering
 
-* Created additional business-oriented features to improve model performance.
-* Generated customer categories based on tenure and revenue-related attributes.
+* Created additional business-related features.
+* Generated customer categories based on tenure and revenue.
+* Prepared the final feature set for machine learning.
 
-### Predictive Modeling
+### Model Development
 
-* Split the dataset into training and testing sets.
-* Trained multiple machine learning models:
+Developed and compared multiple machine learning models:
 
-  * Logistic Regression
-  * Decision Tree Classifier
-  * Random Forest Classifier
-* Compared model performance using accuracy metrics.
-* Evaluated models using:
+* Logistic Regression
+* Decision Tree Classifier
+* Random Forest Classifier
 
-  * Classification Report
-  * Confusion Matrix
-  * ROC-AUC Score
+Each model was evaluated using:
 
-### Feature Importance Analysis
+* Accuracy Score
+* Classification Report
+* Confusion Matrix
+* ROC-AUC Score
 
-* Identified the most influential factors contributing to customer churn.
-* Visualized feature importance to gain business insights.
+### Feature Importance
 
-### Customer Lifetime Value (LTV) Analysis
+* Identified the most influential features contributing to customer churn.
+* Visualized feature importance to improve business understanding.
 
-* Calculated Customer Lifetime Value using customer tenure and monthly charges.
-* Analyzed LTV distribution across the customer base.
+### Customer Lifetime Value (LTV)
+
+* Calculated Customer Lifetime Value using tenure and monthly charges.
+* Analyzed the distribution of customer value.
 * Segmented customers into:
 
   * Bronze
@@ -125,16 +117,8 @@ During Week 2, the project progressed from exploratory analysis to predictive mo
 
 ### Customer Segmentation
 
-* Categorized customers based on value and revenue contribution.
-* Analyzed customer groups to support targeted retention strategies.
-
-## Key Outcomes
-
-* Successfully developed and evaluated multiple churn prediction models.
-* Identified key drivers influencing customer churn behavior.
-* Estimated long-term customer value through LTV analysis.
-* Created customer segments for personalized business strategies.
-* Generated actionable insights for improving customer retention and profitability.
+* Grouped customers based on their lifetime value.
+* Identified high-value customers requiring focused retention strategies.
 
 ## Skills Applied
 
@@ -144,11 +128,133 @@ During Week 2, the project progressed from exploratory analysis to predictive mo
 * Classification Modeling
 * Model Evaluation
 * Customer Segmentation
-* Data Visualization
 * Business Analytics
 
-## Week 2 Conclusion
+## Outcome
 
-Week 2 successfully transformed the cleaned customer dataset into a predictive analytics solution. By combining churn prediction models with customer lifetime value analysis, the project provides valuable insights that can help organizations reduce churn, improve customer retention, and maximize long-term revenue.
+Week 2 transformed the cleaned dataset into a predictive analytics solution capable of estimating customer churn and customer lifetime value. The models and customer segments provide practical insights that businesses can use to improve customer retention and profitability.
 
 **Status: Week 2 Successfully Completed ✅**
+
+---
+
+# Week 3 Completed ✅
+
+## Overview
+
+The third week focused on deploying the machine learning model by developing a REST API using FastAPI. This phase transformed the trained model into a deployable application capable of serving churn predictions for both individual customers and multiple customer records.
+
+## Work Completed
+
+### Model Serialization
+
+* Saved the trained machine learning model using Pickle.
+* Stored the feature column order required during prediction.
+* Generated reusable model files for deployment.
+
+### API Development
+
+Developed a REST API using FastAPI with the following endpoints:
+
+* Home endpoint to verify API status.
+* Single customer prediction endpoint.
+* Batch prediction endpoint for multiple customer records.
+
+### Prediction Pipeline
+
+* Loaded the trained model automatically during API startup.
+* Validated incoming customer data.
+* Ensured input features matched the training feature order.
+* Returned predictions in JSON format.
+
+### API Testing
+
+* Tested all endpoints using Swagger UI.
+* Verified both single and batch prediction functionality.
+* Confirmed prediction accuracy using sample customer records.
+
+### Project Deployment Preparation
+
+* Organized the project into reusable files.
+* Included notebooks, model files, API code, and documentation.
+* Uploaded project files to GitHub for version control and collaboration.
+
+## Skills Applied
+
+* FastAPI
+* REST API Development
+* Machine Learning Deployment
+* JSON Handling
+* API Testing
+* Pickle
+* Git
+* GitHub
+* Python
+
+## Outcome
+
+Week 3 successfully transformed the machine learning model into a deployable REST API capable of serving churn predictions in real time. This makes the predictive model easier to integrate with future applications and dashboards.
+
+**Status: Week 3 Successfully Completed ✅**
+
+---
+
+# Project Progress
+
+Over the first three weeks, this project has evolved from raw customer data into a functional machine learning application.
+
+### Progress So Far
+
+* Data cleaning and preprocessing
+* Exploratory Data Analysis (EDA)
+* Feature engineering
+* Customer churn prediction
+* Customer Lifetime Value (LTV) estimation
+* Customer segmentation
+* Machine learning model evaluation
+* FastAPI REST API development
+* Model deployment preparation
+* Git and GitHub version control
+
+The project can currently predict customer churn, estimate Customer Lifetime Value (LTV), and expose predictions through a FastAPI REST API. These components provide meaningful insights that can support customer retention strategies and business decision-making.
+
+---
+
+# Upcoming Work (Week 4)
+
+The final phase of the project will focus on developing an interactive dashboard to make the machine learning solution easier to understand and use.
+
+### Planned Tasks
+
+* Build an interactive dashboard.
+* Display customer churn insights.
+* Visualize Customer Lifetime Value (LTV).
+* Present customer segmentation.
+* Display important business KPIs.
+* Integrate model predictions with dashboard visualizations.
+* Create an intuitive interface for business users.
+
+---
+
+## Technologies Used
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-learn
+* FastAPI
+* Uvicorn
+* Pickle
+* Jupyter Notebook
+* Git
+* GitHub
+
+---
+
+## Project Status
+
+**Current Status:** Week 3 Successfully Completed ✅
+
+**Next Milestone:** Week 4 – Dashboard Development 🚧
